@@ -10,11 +10,11 @@ public class WxTemplateConstants {
     private WxTemplateConstants() {
     }
 
-    public static final String SPECIAL_MORNING = "lJs7Y5qCziPd9OAR142X98Q7u2ZXA6MAzf0K6SA7ITE";
+    public static final String SPECIAL_MORNING = "-Z9ND6qKNSoiDka1AuSUX2MEr1TcXKLaZBMopj6IDrw";
 
     public static final String COMMON_MORNING = "DaLno0jbl6gbX2XVYkECDZf0VXOr3dPW0dAo0WOBLDg";
 
-    public static final String SPECIAL_AFTERNOON = "nIk83ClpyrnbxXE6O1WP3hhpcZTIjz-DAcriSfF_fu8";
+    public static final String SPECIAL_AFTERNOON = "abkFfiNI5L1ZNa998W62KAX5GpzIUqexZ5mIc829iAI";
 
-    public static final String SPECIAL_NIGHT = "SpOTQ2mHCKrF-k6PfjnWLrrQVA7RSpr_CpWI2cNxXrM";
+    public static final String SPECIAL_NIGHT = "nQ5iQ71WZuxtuCTwbIsoRPl3B9VexAw8snJTw6NbGao";
 }

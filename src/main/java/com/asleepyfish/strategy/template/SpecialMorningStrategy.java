@@ -83,7 +83,7 @@ public class SpecialMorningStrategy implements WxTemplateStrategy {
         wxMpTemplateMessage.addData(new WxMpTemplateData("tomorrow_low", tomorrow.get("low").toString(), "#EE82EE"));
         // 相识天数，可以修改为恋爱天数，或者其他纪念意义天数
         Long meetDays = WxOpUtils.countDays(WxConstants.MEET_DATE, new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
-        wxMpTemplateMessage.addData(new WxMpTemplateData("meet_days", String.valueOf(meetDays), "#C000C0"));
+        wxMpTemplateMessage.addData(new WxMpTemplateData("love_days", String.valueOf(meetDays), "#C000C0"));
         wxMpTemplateMessage.addData(new WxMpTemplateData("daily_english_en1", english1, "#FFCCFF"));
         wxMpTemplateMessage.addData(new WxMpTemplateData("daily_english_en2", english2, "#FFCCFF"));
         wxMpTemplateMessage.addData(new WxMpTemplateData("daily_english_cn1", chinese1, "#CCCCFF"));

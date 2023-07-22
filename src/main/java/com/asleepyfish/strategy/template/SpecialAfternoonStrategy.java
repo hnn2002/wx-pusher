@@ -25,14 +25,19 @@ public class SpecialAfternoonStrategy implements WxTemplateStrategy {
     public void execute(WxMpTemplateMessage wxMpTemplateMessage, IdentityInfo identityInfo) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
         String time = simpleDateFormat.format(new Date());
-        String poemUrl = "http://api.tianapi.com/verse/index?key=" + WxConstants.TX_AK;
+        String poemUrl = "https://apis.tianapi.com/everyday/index?key=" + WxConstants.TX_AK;
         String poemStr = HttpUtil.get(poemUrl);
-        String poemList = JSONObject.parseObject(poemStr).get("newslist").toString();
-        String poem = JSONArray.parseArray(poemList).getJSONObject(0).get("content").toString();
-        String title = JSONArray.parseArray(poemList).getJSONObject(0).get("source").toString();
+        String poemList = JSONObject.parseObject(poemStr).get("result").toString();
+        //String poem = JSONArray.parseArray(poemList).getJSONObject(0).get("content").toString();
+        String poem = JSONObject.parseObject(poemList).get("content").toString();
+        //String title = JSONArray.parseArray(poemList).getJSONObject(0).get("source").toString();
+        String title = JSONObject.parseObject(poemList).get("source").toString();
         wxMpTemplateMessage.addData(new WxMpTemplateData("location", identityInfo.getAddress(), "#9370DB"));
         wxMpTemplateMessage.addData(new WxMpTemplateData("time", time, "#7CFC00"));
         wxMpTemplateMessage.addData(new WxMpTemplateData("poem", poem, "#FFA500"));
+        if(title.equals("")){
+            title = "不知道谁说的";
+        }
         wxMpTemplateMessage.addData(new WxMpTemplateData("title", "《" + title + "》", "#FF6347"));
     }
 }

@@ -12,17 +12,17 @@ public final class WxConstants {
     /**
      * appId
      */
-    public static final String APP_ID = "";
+    public static final String APP_ID = "wxa71d09ded2916d20";
 
     /**
      * appSecret
      */
-    public static final String APP_SECRET = "";
+    public static final String APP_SECRET = "8fed9ea6bca928a090f38efe784c12e3";
 
     /**
      * 公众号
      */
-    public static final String PUBLIC_ID = "";
+    public static final String PUBLIC_ID = "gh_1471ac4902e9";
 
     /**
      * token
@@ -37,17 +37,17 @@ public final class WxConstants {
     /**
      * 请求百度地图相关服务的AK
      */
-    public static final String BAI_DU_AK = "";
+    public static final String BAI_DU_AK = "kBvScD29cG1pSs0XOtW2lPTO88Q0eBMt";
 
     /**
      * 天行API AK
      */
-    public static final String TX_AK = "";
+    public static final String TX_AK = "3409f0eee0ee08c17451b8c0d1dc8eaa";
 
     /**
      * 相识日期
      */
-    public static final String MEET_DATE = "2018-03-02";
+    public static final String MEET_DATE = "2022-06-27";
 
     /**
      * 客服

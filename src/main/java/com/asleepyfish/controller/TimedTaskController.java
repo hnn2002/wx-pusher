@@ -51,7 +51,7 @@ public class TimedTaskController {
     }
 
     @PostMapping("/executeSpecialNightTask")
-    @Scheduled(cron = "0 20 22 * * ?")
+    @Scheduled(cron = "0 30 22 * * ?")
     public void executeSpecialNightTask() {
         wxPublisher.inform(WxTemplateType.SPECIAL_NIGHT);
     }
